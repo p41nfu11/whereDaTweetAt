@@ -123,7 +123,7 @@ var StreamSearch = function(searchFor){
 
             self.stream.on('tweet', function (tweet) {
 
-                if(tweet.geo!=null){ //only show geo-encoded tweets | we need the location data
+                if(tweet.geo!==null){ //only show geo-encoded tweets | we need the location data
 
                     //basic info we will definitely want to display as its own easy to find variables
                     var text = tweet.text;
@@ -131,7 +131,7 @@ var StreamSearch = function(searchFor){
                     var user_name = user.screen_name;
                     var date = new Date(tweet.created_at);
                     var coords = tweet.coordinates.coordinates;//JSON.stringify(tweet.coordinates);
-                    var place = tweet.place!=null ? tweet.place.full_name: 'unknown' ;
+                    var place = tweet.place!==null ? tweet.place.full_name: 'unknown' ;
                     var tLog = user_name + " tweeted: " + text + " at " + coords;
 
                     //create the response with the above properties, but also include everything in the allData property
