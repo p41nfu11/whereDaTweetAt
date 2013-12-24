@@ -7,6 +7,9 @@ Demo Site: http://jg-technologies.net/whereDaTweetAt
 
 Requirements: node installed on server
 
+Go to twit/config.js and enter your twitter app's info
+(discloser: the twit libraries were not written by me)
+
 To start backend app do a:
 
     node whereDaTweetAt.js
